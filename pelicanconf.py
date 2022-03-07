@@ -32,5 +32,5 @@ DEFAULT_PAGINATION = 10
 
 STATIC_PATHS = ['images']
 
-THEME = 'themes/flex'
+THEME = 'themes/Flex'
 OUTPUT_PATH = '/output'
