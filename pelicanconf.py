@@ -1,6 +1,6 @@
 AUTHOR = 'Reganto'
 SITENAME = 'Reganto'
-SITEURL = ''
+SITEURL = 'https://reganto.github.io'
 
 PATH = 'content'
 
