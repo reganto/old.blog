@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fa">
 <head>
-	<title>رگانتو</title>
+  	<title>تست رگرسیون با Siege</title>
 
 	<link rel="stylesheet" href="/theme/css/bootstrap.css" type="text/css" />
 	<link rel="stylesheet" href="/theme/css/bootstrap-rtl.css" type="text/css" />
@@ -18,6 +18,9 @@
 
 	<link rel="alternate" href="/feeds/all.atom.xml" type="application/atom+xml" title="خبرخوان رگانتو -دست و دل نوشته‌های گیکی از وانیار " />
 
+
+    <meta name="tags" content="test" />
+    <meta name="tags" content="regression testing" />
 </head>
 <body>
 	<div class="wrap">
@@ -27,17 +30,16 @@
 				<h1>دست و دل نوشته‌های گیکی از وانیار</h1>
 			</div>
 <div class="content">
-	<div class="posts">
-			<div class="post">
-				<h3>
-					<a href="/regression-testing-with-seige.html" title="تست رگرسیون با Siege">تست رگرسیون با Siege</a>
-				</h3>
-				<div class="info">
-					Wed 18 May 2022
-						توسط <a class="url fn" href="/author/reganto.html">Reganto</a>
-				</div>
-				<div class="content">
-					<p>فرض کنید می‌خواهید برنامه ی تحت وب خود را برای یک میلیون کاربر آماده کنید.برای تست این برنامه دو راه وجود دارد، راه اول این است که از یک میلیون کاربر بخواهید که برنامه ی شما را تست کنند و راه دوم شبیه سازی این تعداد کاربر است.</p>
+	<div class="post">
+		<h3>
+			تست رگرسیون با Siege
+		</h3>
+		<div class="info">
+			Wed 18 May 2022
+				توسط <a class="url fn" href="/author/reganto.html">Reganto</a>
+		</div>
+		<div class="content">
+			<p>فرض کنید می‌خواهید برنامه ی تحت وب خود را برای یک میلیون کاربر آماده کنید.برای تست این برنامه دو راه وجود دارد، راه اول این است که از یک میلیون کاربر بخواهید که برنامه ی شما را تست کنند و راه دوم شبیه سازی این تعداد کاربر است.</p>
 <h3>انواع تست کارایی</h3>
 <p><strong>Load test:</strong>
 وقتی که برنامه تحت وب را برای تعداد مشخص و از قبل تعیین شده‌ای از درخواست ها تست می‌کنیم،‌به این نوع تست load test می گویند.</p>
@@ -472,13 +474,8 @@ Content-Length: <span class="m">418</span>
 <p><strong>مروری بر مهم‌ترین کانفیگ‌های Siege</strong></p>
 <p>همان‌طور که قبلا اشاره شد کانفیگ ابزار در مسیر <code>etc/siege/siegerc/</code> قرار دارد. البته یک کپی از تنظیمات نیز در مسیر ‍<code>siege/siege.cong./~</code> وجود دارد. توضیحات مربوط به هر کانفیگ در قسمت بالای آن کانفیگ به صورت کامنت‌شده قرار دارد در این قسمت چند کانفیگ مهم را مرور خواهیم کرد.</p>
 <p>درباره‌ی log در ابزار قبلا توضیح دادیم. <code>logfile</code> مسیر لاگ‌های ابزار را مشخص می‌کند. <code>verbose</code> همان سوئیچ v- است. <code>color</code> برای نمایش خروجی به صورت رنگی استفاده می‌شود و مقادیر آن به صورت on/off می‌باشد. <code>quiet</code> همان سوئیچ q- است. قبلا ذکر شد که اگر ابزار با سوئیچ g- اجرا شود، هدر درخواست و پاسخ نمایش داده می‌شود. تنظیم <code>gmethod</code> متدی را که ابزار در حالتی که با سوئیچ g- اجرا می‌شود را تعیین می کند. مقادیر این تنظیم GET/HEAD هستند. با متد HEAD فقط هدر درخواست و پاسخ نمایش داده می‌شود اما با متد GET تمام صفحه‌ای که درخواست به آن ارسال می‌شود، برگشت داده می‌شود و این دقیقا همان کاری‌ است که سوئیچ p- انجام می‌دهد. وقتی که درخواستی به یک سرور ارسال می‌شوداگر آپشن v- استفاده شده باشد، لاگ های ابزار در خروجی قرار می گیرند همچنین آدرس‌هایی که تست می‌شوند به صورت خلاصه شده در لاگ خروجی قرار می گیرند. با <code>fullurl</code> می توانیم خروجی لاگ‌ها را به صورت کامل نمایش دهیم. مقادیر این تنظیم به صورت true/false است. <code>protocol</code> پروتکل درخواست را مشخص می کند مقادیر آن می تواند HTTP/1.0 یا HTTP/1.1 باشد. در مورد HTTP/2.0 در مستندات اشاره‌ای نشده است. <code>concurrent</code> مشابه سوئیچ c- است. برای بعضی از تنظیمات،‌ سوئیچ‌های متناظری نیز در نظر گرفته شده است. تنظیم‌های <code>time</code> و <code>reps</code> و <code>file</code> و <code>dely</code> و <code>internet</code> و <code>benchmark</code> و سوئیچ‌های t- و ‍r- و f- و d- و i- و b- متناظر هستند.</p>
-				</div>
-			</div>
+		</div>
 	</div>
-<p class="paginator">
-    صفحه 1 / 4
-        <a href="/index2.html">&raquo;</a>
-</p>
 </div>
 		</div>
 		<div class="push"></div>
