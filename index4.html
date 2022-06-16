@@ -30,20 +30,39 @@
 	<div class="posts">
 			<div class="post">
 				<h3>
-					<a href="/post-template.html" title="Post Template">Post Template</a>
+					<a href="/one-of-my-job-interview-questions.html" title="یکی از سوالات مصاحبه من">یکی از سوالات مصاحبه من</a>
 				</h3>
 				<div class="info">
-					Fri 03 December 2010
+					Fri 11 March 2022
 						توسط <a class="url fn" href="/author/reganto.html">Reganto</a>
 				</div>
 				<div class="content">
-					<p>(:</p>
+					<p>عنوان سوال:</p>
+<p>با توجه به داده‌های موجود در شکل زیر کوئری بنویسید که میزان تخفیف مشتریان سوئدی را ۵٪ افزایش دهد:
+<img alt="سه جدول پایگاه داده" src="/images/1400/12/f.jpg"></p>
+<p>راه‌حل من برای این سوال به این صورت بود که :</p>
+<div dir="ltr">
+
+<div class="highlight"><pre><span></span><code><span class="k">update</span><span class="w"> </span><span class="n">order_details_tbl</span><span class="w"> </span><span class="k">set</span><span class="w"> </span><span class="n">discount</span><span class="o">=</span><span class="n">discount</span><span class="o">+</span><span class="mf">0.005</span><span class="w"></span>
+<span class="k">from</span><span class="w"> </span><span class="p">(</span><span class="w"></span>
+<span class="w">  </span><span class="k">select</span><span class="w"> </span><span class="n">orderid</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">orders_tbl</span><span class="w"> </span>
+<span class="w">  </span><span class="k">join</span><span class="w"> </span><span class="n">customers_tbl</span><span class="w"> </span><span class="k">using</span><span class="p">(</span><span class="n">custid</span><span class="p">)</span><span class="w"> </span>
+<span class="w">  </span><span class="k">where</span><span class="w"> </span><span class="n">customers_tbl</span><span class="mf">.</span><span class="n">country</span><span class="o">=</span><span class="s1">&#39;Sweden&#39;</span><span class="w"></span>
+<span class="p">)</span><span class="w"> </span><span class="n">x</span><span class="w"></span>
+<span class="k">where</span><span class="w"> </span><span class="n">x</span><span class="mf">.</span><span class="n">orderid</span><span class="o">=</span><span class="n">order_details_tbl</span><span class="mf">.</span><span class="n">orderid</span><span class="p">;</span><span class="w"></span>
+</code></pre></div>
+
+
+</div>
+
+<p>این جواب بر روی پستگرس به خوبی کار می‌کند.</p>
 				</div>
 			</div>
 	</div>
 <p class="paginator">
         <a href="/index3.html">&laquo;</a>
-    صفحه 4 / 4
+    صفحه 4 / 5
+        <a href="/index5.html">&raquo;</a>
 </p>
 </div>
 		</div>
