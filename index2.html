@@ -1,160 +1,178 @@
 <!DOCTYPE html>
 <html lang="fa">
-<head>
-	<title>رگانتو</title>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/theme/css/elegant.prod.9e9d5ce754.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="/theme/css/custom.css" media="screen">
+        <link rel="dns-prefetch" href="//fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
 
-	<link rel="stylesheet" href="/theme/css/bootstrap.css" type="text/css" />
-	<link rel="stylesheet" href="/theme/css/bootstrap-rtl.css" type="text/css" />
-	<link rel="stylesheet" href="/theme/css/pygments.css" type="text/css" />
-	<link rel="stylesheet" href="/theme/css/main.css" type="text/css" />
-	<link rel="stylesheet" href="/theme/css/Vazir.css" type="text/css" />
-	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
-	<script>
-  		$(document).ready(function () {
-    		$(".post table").addClass("table table-striped table-condensed table-bordered");
-  	  	});
-    </script>
-	<meta charset="utf-8" />
+        <meta name="author" content="Reganto" />
 
-	<link rel="alternate" href="/feeds/all.atom.xml" type="application/atom+xml" title="خبرخوان رگانتو -دست و دل نوشته‌های گیکی از وانیار " />
+        <meta property="og:type" content="article" />
+        <meta name="twitter:card" content="summary">
 
-</head>
-<body>
-	<div class="wrap">
-		<div class="container">
-			<div class="banner">
-				<a href="">رگانتو</a>
-				<h1>دست و دل نوشته‌های گیکی از وانیار</h1>
-			</div>
-<div class="content">
-	<div class="posts">
-			<div class="post">
-				<h3>
-					<a href="/solid-principles.html" title="اصول SOLID">اصول SOLID</a>
-				</h3>
-				<div class="info">
-					Tue 21 June 2022
-						توسط <a class="url fn" href="/author/reganto.html">Reganto</a>
-				</div>
-				<div class="content">
-					<h3>مقدمه</h3>
-<p>SOLID «سالید» کلمه‌ای مخفف برای پنج اصل است که معمولا در <strong>طراحی شی‌گرا</strong> اعمال می‌شوند. این اصول کمک می‌کنند تا برنامه‌ها <strong>قابل درک‌تر</strong>، <strong>منعطف‌تر</strong>و <strong>قابلیت نگه‌داری آسان‌تر</strong>ی داشته باشند. اصول سالید برای مدیریت وابستگی‌ها استفاده می‌شوند. این اصول مستقل از هم نیستند و نقض هر کدام «احتمالا» منجر به نقض بقیه خواهد شد.</p>
-<h3>ارتباط میان SOLID و Design Patterns</h3>
-<p>الگوهای طراحی «Design Patterns» راه‌حل‌هایی امتحان شده و قابل اطمینان برای مسائل رایج هستند. الگوهای طراحی به صورت ضمنی SOLID را نیز تحت پوشش قرار می‌دهند.</p>
-<h3>اصل اول: Single Responsibility Principle «اصل تک مسئولیتی»</h3>
-<p>اصل SRP بیان می‌دارد که هر موجودیت در برنامه شی‌گرا اعم از کلاس،‌متد یا تابع بایستی تنها یک وظیفه برای انجام داشته باشد و در این صورت است که موجودیت مفروض ما اگر نیاز به تغییر داشته باشد،‌ باید تنها به یک دلیل تغییر کند. تک مسئولیتی بودن هر بخش از کد بخشی از فلسفه یونیکس هم هست</p>
-<blockquote>
-<p>اگر موجودیتی چندین مسئولیت برای انجام داشته باشد اصطلاحا به آن <strong>god object</strong> می‌گویند</p>
-</blockquote>
-<p><strong>مثال</strong></p>
-<p>کلاس زیر را در نظر بگیرید</p>
-<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Student</span><span class="p">:</span>
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">_name</span> <span class="o">=</span> <span class="n">name</span>
+<meta property="og:title" content="رگانتو"/>
+<meta name="twitter:title" content="رگانتو">
+<meta property="og:url" content="" />
+<meta property="og:site_name" content="رگانتو" />
+<meta property="og:article:author" content="Reganto" />
+<meta name="keywords" content=" django,  مصاحبه,  pelican,  publishing,  regression testing,  scalability,  scale out,  scale up,  SOLID,  سوال استخدامی,  test,  vscode,  blog,  Clean Architecture,  Python,  Software Architecture,  Test, " />
+        <title>رگانتو
+</title>
+        <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="رگانتو - Full Atom Feed" />
 
-    <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">name</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="c1"># get student name</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span>
 
-    <span class="nd">@name</span><span class="o">.</span><span class="n">setter</span>
-    <span class="k">def</span> <span class="nf">name</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nm</span><span class="p">):</span>
-        <span class="c1"># set student name</span>
-        <span class="k">if</span> <span class="n">nm</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
 
-    <span class="k">def</span> <span class="nf">insert_to_db</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="c1"># Database logic written here</span>
-        <span class="k">pass</span>
+    </head>
+    <body style="direction: rtl;">
+        <div id="content">
+            <div class="navbar navbar-static-top">
+                <div class="navbar-inner">
+                    <div class="container-fluid">
+                        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </a>
+                        <a class="brand" href="/"><span class=site-name>رگانتو</span></a>
+                        <div class="nav-collapse collapse">
+                            <ul class="nav pull-right top-menu">
+                                <li  class="active">
+                                    <a href=
+                                       "/"
+                                    >Home</a>
+                                </li>
+                                <li ><a href="/categories.html">Categories</a></li>
+                                <li ><a href="/tags.html">Tags</a></li>
+                                <li ><a href="/archives.html">Archives</a></li>
+                                <li><form class="navbar-search" action="/search.html" onsubmit="return validateForm(this.elements['q'].value);"> <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input"></form></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row-fluid">
+                    <div class="span1"></div>
+                    <div class="span10">
 
-    <span class="k">def</span> <span class="nf">generate_report</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="c1"># Report formatting</span>
-        <span class="k">pass</span>
-</code></pre></div>
 
-<p>همانطور که می‌بینید در کلاس <code>Student</code> چندین متد وجود دارد و هر متد وظیفه خاص و غیرمرتبط با متد‌های دیگر دارد. این شیوه پیاده‌سازی ناقض اصل <code>SRP</code> است. برای پیروی از SRP دو متد آخر را در دو کلاس جداگانه قرار می‌دهیم.</p>
-<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Student</span><span class="p">:</span>
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">_name</span> <span class="o">=</span> <span class="n">name</span>
+<div class="row-fluid">
 
-    <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">name</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="c1"># get student name</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span>
+    <div class="row-fluid">
 
-    <span class="nd">@name</span><span class="o">.</span><span class="n">setter</span>
-    <span class="k">def</span> <span class="nf">name</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nm</span><span class="p">):</span>
-        <span class="c1"># set student name</span>
-        <span class="k">if</span> <span class="n">nm</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+    </div>
 
-<span class="k">class</span> <span class="nc">StudentDB</span><span class="p">:</span>
-    <span class="k">def</span> <span class="nf">retrieve</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">id</span><span class="p">):</span>
-        <span class="c1"># Retrieve data from DB</span>
-        <span class="k">pass</span>
-
-    <span class="k">def</span> <span class="nf">insert</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">obj</span><span class="p">):</span>
-        <span class="c1"># Insert obj to DB</span>
-        <span class="k">pass</span>
-
-<span class="n">Class</span> <span class="n">StudentLog</span><span class="p">:</span>
-    <span class="k">def</span> <span class="nf">generate_report</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="c1"># Report formatting</span>
-        <span class="k">pass</span>
-</code></pre></div>
-
-<p>در این حالت هر کلاس تنها یک وظیفه برای انجام برعهده دارد و اگر بنابر تغییر یکی از این کلاس‌ها داشته باشیم تنها به یک دلیل کلاس مورد نظر را تغییر خواهیم داد. اصل <code>SRP</code> برای توابع و متد‌ها نیز می‌تواند موضوعیت داشته باشد. به عنوان مثال به فانکشن زیر توجه کنید:</p>
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">insert</span><span class="p">():</span>
-    <span class="c1"># Create connection</span>
-    <span class="c1"># Prepare params for insertion</span>
-    <span class="c1"># Execute insertion</span>
-    <span class="c1"># Return result</span>
-    <span class="k">pass</span>    
-</code></pre></div>
-
-<p>همانطور که می‌بینید ما در این تابع یک کانکشن به دیتابیس ساخته‌ایم. پارامترهای لازم را فراهم آورده‌ایم. داده را وارد دیتابیس کرده‌ایم و نتیجه را برگشت‌ داده‌ایم. این تابع به وضوح اصل <code>SRP</code> را نقض می‌کند. از آن‌گذشته برای توابع دیگر نیز باید کد مربوط به اتصال به دیتابیس را تکرار کنیم. بنابراین پیاده‌سازی بهتر می‌تواند به صورت زیر باشد:</p>
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">db_connection</span><span class="p">():</span>
-    <span class="c1"># Return a connection to DB</span>
-    <span class="k">pass</span>
-
-<span class="k">def</span> <span class="nf">get_params</span><span class="p">():</span>
-    <span class="c1"># Prepare params</span>
-    <span class="k">pass</span>
-
-<span class="k">def</span> <span class="nf">insert</span><span class="p">():</span>
-    <span class="n">connection</span> <span class="o">=</span> <span class="n">db_connection</span><span class="p">()</span>
-    <span class="n">params</span> <span class="o">=</span> <span class="n">get_params</span><span class="p">()</span>
-    <span class="c1"># Insert data to DB</span>
-    <span class="c1"># Return result</span>
-    <span class="k">pass</span>
-</code></pre></div>
-
-<p>منابع:</p>
-<ul>
-<li>Clean Code in Python by Mariano Anaya</li>
-</ul>
-				</div>
-			</div>
-	</div>
-<p class="paginator">
-        <a href="/index.html">&laquo;</a>
-    صفحه 2 / 7
-        <a href="/index3.html">&raquo;</a>
-</p>
+    <div class="row-fluid">
+        <div class="span8 offset2">
+            <header>
+            <h1 id="recent-posts">Recent Posts <a id="allposts" href="/archives.html">all posts</a></h1>
+            </header>
+        <div class="recent-posts">
+            <div itemscope class="recent-posts-article">
+                <a href="/scalability.html">
+                    مقاس‌پذیری
+                </a>
+                <div class="recent-posts-posted">
+                    posted in
+                    <a href="/categories.html#software-architecture-ref">Software Architecture</a>
+                    <time itemprop="dateCreated" datetime="2022-09-14T10:20:00+04:30">Wed 14 September 2022</time>
+                </div>
+            </div>
+            <div itemscope class="recent-posts-article">
+                <a href="/solid-principles.html">
+                    اصول SOLID
+                </a>
+                <div class="recent-posts-posted">
+                    posted in
+                    <a href="/categories.html#clean-architecture-ref">Clean Architecture</a>
+                    <time itemprop="dateCreated" datetime="2022-06-21T10:20:00+04:30">Tue 21 June 2022</time>
+                </div>
+            </div>
+            <div itemscope class="recent-posts-article">
+                <a href="/vscode-for-djagno.html">
+                    آماده‌سازی VSCode برای Django
+                </a>
+                <div class="recent-posts-posted">
+                    posted in
+                    <a href="/categories.html#python-ref">Python</a>
+                    <time itemprop="dateCreated" datetime="2022-06-16T10:20:00+04:30">Thu 16 June 2022</time>
+                </div>
+            </div>
+            <div itemscope class="recent-posts-article">
+                <a href="/regression-testing-with-seige.html">
+                    تست رگرسیون با Siege
+                </a>
+                <div class="recent-posts-posted">
+                    posted in
+                    <a href="/categories.html#test-ref">Test</a>
+                    <time itemprop="dateCreated" datetime="2022-05-18T16:48:00+04:30">Wed 18 May 2022</time>
+                </div>
+            </div>
+            <div itemscope class="recent-posts-article">
+                <a href="/dibiasky-extinction.html">
+                    انقراض دبیاسکی
+                </a>
+                <div class="recent-posts-posted">
+                    posted in
+                    <a href="/categories.html#blog-ref">blog</a>
+                    <time itemprop="dateCreated" datetime="2022-03-16T16:33:00+03:30">Wed 16 March 2022</time>
+                </div>
+            </div>
+            <div itemscope class="recent-posts-article">
+                <a href="/one-of-my-job-interview-questions.html">
+                    یکی از سوالات مصاحبه من
+                </a>
+                <div class="recent-posts-posted">
+                    posted in
+                    <a href="/categories.html#blog-ref">blog</a>
+                    <time itemprop="dateCreated" datetime="2022-03-11T19:38:00+03:30">Fri 11 March 2022</time>
+                </div>
+            </div>
+            <div itemscope class="recent-posts-article">
+                <a href="/post-template.html">
+                    Post Template
+                </a>
+                <div class="recent-posts-posted">
+                    posted in
+                    <a href="/categories.html#python-ref">Python</a>
+                    <time itemprop="dateCreated" datetime="2010-12-03T10:20:00+03:30">Fri 03 December 2010</time>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
 </div>
-		</div>
-		<div class="push"></div>
-	</div>
-	<div class="footer">
-		<div class="container">
-			<hr/>
-				<ul class="nav nav-pills pull-right">
-				  <li><a href="/archives.html">بایگانی</a></li>
-				  <li><a href="/feeds/all.atom.xml">خبرخوان</a> </li>
-                  <li><a href="https://bayanbox.ir/view/4000388191129105754/software-design.pdf">کتابچه معماری نرم‌افزار</a></li>
-                  <li><a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> </li>
-				</ul>
-		</div>
-	</div>
-</body>
+                    </div>
+                    <div class="span1"></div>
+                </div>
+            </div>
+        </div>
+<footer>
+
+    <div>
+        <span class="site-name">رگانتو</span> - دست و دل نوشته‌های گیکی از وانیار
+    </div>
+
+
+
+    <div id="fpowered">
+        Powered by: <a href="http://getpelican.com/" title="Pelican Home Page" target="_blank" rel="nofollow noopener noreferrer">Pelican</a>
+        Theme: <a href="https://elegant.oncrashreboot.com/" title="Theme Elegant Home Page" target="_blank" rel="nofollow noopener noreferrer">Elegant</a>
+    </div>
+</footer>        <script src="//code.jquery.com/jquery.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+        <script src="/theme/js/elegant.prod.9e9d5ce754.js"></script>
+        <script>
+            function validateForm(query)
+            {
+                return (query.length > 0);
+            }
+        </script>
+    </body>
+    <!-- Theme: Elegant built for Pelican
+        License : MIT -->
 </html>

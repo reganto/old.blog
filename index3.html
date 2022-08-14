@@ -1,221 +1,178 @@
 <!DOCTYPE html>
 <html lang="fa">
-<head>
-	<title>رگانتو</title>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/theme/css/elegant.prod.9e9d5ce754.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="/theme/css/custom.css" media="screen">
+        <link rel="dns-prefetch" href="//fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
 
-	<link rel="stylesheet" href="/theme/css/bootstrap.css" type="text/css" />
-	<link rel="stylesheet" href="/theme/css/bootstrap-rtl.css" type="text/css" />
-	<link rel="stylesheet" href="/theme/css/pygments.css" type="text/css" />
-	<link rel="stylesheet" href="/theme/css/main.css" type="text/css" />
-	<link rel="stylesheet" href="/theme/css/Vazir.css" type="text/css" />
-	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
-	<script>
-  		$(document).ready(function () {
-    		$(".post table").addClass("table table-striped table-condensed table-bordered");
-  	  	});
-    </script>
-	<meta charset="utf-8" />
+        <meta name="author" content="Reganto" />
 
-	<link rel="alternate" href="/feeds/all.atom.xml" type="application/atom+xml" title="خبرخوان رگانتو -دست و دل نوشته‌های گیکی از وانیار " />
+        <meta property="og:type" content="article" />
+        <meta name="twitter:card" content="summary">
 
-</head>
-<body>
-	<div class="wrap">
-		<div class="container">
-			<div class="banner">
-				<a href="">رگانتو</a>
-				<h1>دست و دل نوشته‌های گیکی از وانیار</h1>
-			</div>
-<div class="content">
-	<div class="posts">
-			<div class="post">
-				<h3>
-					<a href="/vscode-for-djagno.html" title="آماده‌سازی VSCode برای Django">آماده‌سازی VSCode برای Django</a>
-				</h3>
-				<div class="info">
-					Thu 16 June 2022
-						توسط <a class="url fn" href="/author/reganto.html">Reganto</a>
-				</div>
-				<div class="content">
-					<p>پوشه‌ای برای پروژه خود بسازید:</p>
-<div class="highlight"><pre><span></span><code>mkdir myproject
-</code></pre></div>
+<meta property="og:title" content="رگانتو"/>
+<meta name="twitter:title" content="رگانتو">
+<meta property="og:url" content="" />
+<meta property="og:site_name" content="رگانتو" />
+<meta property="og:article:author" content="Reganto" />
+<meta name="keywords" content=" django,  مصاحبه,  pelican,  publishing,  regression testing,  scalability,  scale out,  scale up,  SOLID,  سوال استخدامی,  test,  vscode,  blog,  Clean Architecture,  Python,  Software Architecture,  Test, " />
+        <title>رگانتو
+</title>
+        <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="رگانتو - Full Atom Feed" />
 
-<p>vscode را اجرا کنید و از منوی File بر روی زیرمنوی Add folder to workspace بزنید. پوشه پروژه<code>myproject</code> را به vscode اضافه کنید.</p>
-<p>برای ذخیره workspace جاری از منوی File بر روی Save workspace as... بزنید.</p>
-<p>در صورتی که از ورژن کنترل استفاده می‌کنید،‌ Git را در دایرکتوری جاری init کنید</p>
-<div class="highlight"><pre><span></span><code>git init
-</code></pre></div>
 
-<p>یک فایل <code>.gitignore</code> مخصوص پایتون اضافه کنید. یک نمونه گیت‌ایگنور برای پایتون را می‌توانید در <a href="https://github.com/reganto/usernado/blob/master/.gitignore">این مسیر</a> بیابید.</p>
-<p>برای پروژه‌ی جاری یک <code>Virtualenv</code> بسازید:</p>
-<div class="highlight"><pre><span></span><code>python -m venv venv
-</code></pre></div>
 
-<p>برای فعال‌سازی virtualenv در شل می‌توان از دستور </p>
-<div class="highlight"><pre><span></span><code><span class="nb">source</span> venv/bin/activate
-</code></pre></div>
+    </head>
+    <body style="direction: rtl;">
+        <div id="content">
+            <div class="navbar navbar-static-top">
+                <div class="navbar-inner">
+                    <div class="container-fluid">
+                        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </a>
+                        <a class="brand" href="/"><span class=site-name>رگانتو</span></a>
+                        <div class="nav-collapse collapse">
+                            <ul class="nav pull-right top-menu">
+                                <li  class="active">
+                                    <a href=
+                                       "/"
+                                    >Home</a>
+                                </li>
+                                <li ><a href="/categories.html">Categories</a></li>
+                                <li ><a href="/tags.html">Tags</a></li>
+                                <li ><a href="/archives.html">Archives</a></li>
+                                <li><form class="navbar-search" action="/search.html" onsubmit="return validateForm(this.elements['q'].value);"> <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input"></form></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row-fluid">
+                    <div class="span1"></div>
+                    <div class="span10">
 
-<p>استفاده کرد.</p>
-<p>حالا نوبت آن است که virtualenv ساخته شده را به vscode معرفی کنیم. در vscode کلید‌های ترکیبی <code>Ctrl+Shift+p</code> را بفشارید و <code>select interpreter</code> را تایپ کنید. از مسیر <code>myproject/venv/bin/python</code> می‌توانید پایتون را به vscode معرفی کنید.</p>
-<p>در مسیر <code>myproject</code> اگر پوشه <code>.vscode</code> وجود ندارد، آن را بسازید. فایلی به نام <code>settings.json</code> در این پوشه ایجاد کنید. در این فایل می‌توانیم تنظیمات vscode برای workspace  جاری را قرار دهیم. بعضی از مقادیر از این قرارند:</p>
-<div class="highlight"><pre><span></span><code><span class="o">{</span>
-    <span class="s2">&quot;telemetry.telemetryLevel&quot;</span>: <span class="s2">&quot;off&quot;</span>,
-    <span class="s2">&quot;python.analysis.autoImportCompletions&quot;</span>: true,
-    <span class="s2">&quot;autoDocstring.docstringFormat&quot;</span>: <span class="s2">&quot;sphinx&quot;</span>,
-    <span class="s2">&quot;python.linting.flake8Enabled&quot;</span>: true,
-    <span class="s2">&quot;python.linting.enabled&quot;</span>: true,
-    <span class="s2">&quot;editor.formatOnSave&quot;</span>: true,
-    <span class="s2">&quot;python.formatting.provider&quot;</span>: <span class="s2">&quot;black&quot;</span>,
-<span class="o">}</span>
-</code></pre></div>
 
-<p>اولین مورد مربوط به خاموش کردن <code>telemetry</code> برای vscode است تا اطلاعاتی از فعالیت‌های ما برای توسعه‌دهندگان فرستاده نشود. دومین مورد مربوط به قابلیت <code>autoImport</code> برای vscode است که تا زمان نگارش این متن کارایی خوبی نداشته و بهتر است خاموش شود. سومین مورد مربوط به تعیین نوع <code>docstring</code> برای توابع و کلاس‌هاست. این مورد مربوط به یک افزونه vscode است. مورد بعدی برای فعال نمودن ‍‍‍<code>flake8</code> به عنوان ‍<code>Linter</code> استفاده می‌شود. مورد بعدی برای فعال نمودن قابلیت <code>linting</code> برای vscode است. مورد بعدی برای فرمت‌بندی کد در هنگام ذخیره آن استفاده می‌شود یعنی هربار که کد را ذخیره می‌کنیم بلافاصله کد به صورت خودکار با یک <code>Code Formatter</code> مانند <code>Black</code> فرمت‌بندی می‌شود. مورد آخر <code>Code Formatter</code> را مشخص می‌کند که معمولا در پروژه‌هایی جنگویی توصیه به استفاده از <code>Black</code> به عنوان <code>Code Formatter</code> است.</p>
-<p>برای مدیریت وابستگی‌ها از <code>poetry</code> استفاده کنید. با دستور </p>
-<div class="highlight"><pre><span></span><code>poetry init
-</code></pre></div>
+<div class="row-fluid">
 
-<p>poetry  را برای پروژه جاری تنظیم کنید. به سوالاتی که poetry درباره‌ی پروژه می‌پرسد جواب دهید.</p>
-<p>اطلاعات بیشتر راجع‌به <a href="https://python-poetry.org/">poetry</a> را می‌توانید در وبسایت ابزار بیابید.</p>
-<p>در صورتی که <code>virtualenv</code> فعال نیست آن را فعال کنید.</p>
-<p>حالا با دستور </p>
-<div class="highlight"><pre><span></span><code>poetry env info
-</code></pre></div>
+    <div class="row-fluid">
 
-<p>از فعال بودن <code>virtualenv</code> اطمینال حاصل کنید.</p>
-<p>لینتر <code>Flake8</code> و فرمتر <code>Black</code> را نصب کنید:</p>
-<p>‍‍‍</p>
-<div class="highlight"><pre><span></span><code>poetry add black flake8 --dev
-</code></pre></div>
+    </div>
 
-<p>همانطور که می‌بینید این پکیج‌ها را تنها برای حالت <code>development</code> نصب کردیم.</p>
-<p>در مرحله بعد باید <code>Django</code> و ‍<code>DRF</code> را نصب کنیم. «در صورتی که تمایل به ایجاد API دارید DRF را نصب کنید»</p>
-<div class="highlight"><pre><span></span><code>poetry add django djangorestframework
-</code></pre></div>
-
-<p>به دلیل عمل کردن <code>poetry</code> و <code>pip</code> روی یک <code>virtualenv</code> می‌توانیم فایل <code>requirements.txt</code>  را به سادگی ایجاد کنیم</p>
-<div class="highlight"><pre><span></span><code>pip freeze &gt; requirements.txt
-</code></pre></div>
-
-<p>یک پروژه جنگو ایجاد کنید</p>
-<div class="highlight"><pre><span></span><code>django-admin startproject config .
-</code></pre></div>
-
-<p>بر روی فایل <code>manage.py</code> کلیک کنید و آنگاه بر روی زبانه‌ی <code>Run and Debug</code> بزنید و در نهایت <code>launch‍</code>  را کلیک کنید. از لیست فریم‌ورک‌ها Django را انتخاب کنید. با طی این مراحل فایل با نام <code>launch.json</code> در مسیر <code>myproject/.vscode/</code> ساخته می‌شود. حالا با <code>F5</code> می‌توانید جنگو را اجرا کنید. در واقع F5 همان کار <code>./manage.py runserver</code> را انجام می‌دهد.</p>
-<p>ساختار فایل‌ها:</p>
-<div class="highlight"><pre><span></span><code>myproject/
-    .vscode/
-        settings.json
-        launch.json
-    backend/
-        config/
-            __init__.py
-            asgi.py
-            settings.py
-            urls.py
-            wsgi.py
-        venv/
-        .gitignore
-        manage.py
-        poetry.lock
-        pyproject.toml
-        requirements.txt
-
-    frontend/
-    .gitignore
-    CONTRIBUTING.md
-    LICENSE.txt
-    myproject.code-workspace
-    README.md
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>VSCode Django Checklist:
-
-- <span class="o">[</span> <span class="o">]</span> add folder to workspace
-
-- <span class="o">[</span> <span class="o">]</span> save workspace  
-
-- <span class="o">[</span> <span class="o">]</span> git init
-
-- <span class="o">[</span> <span class="o">]</span> add gitignore to backend
-
-- <span class="o">[</span> <span class="o">]</span> add venv
-
-- <span class="o">[</span> <span class="o">]</span> activate venv
-
-- <span class="o">[</span> <span class="o">]</span> <span class="k">select</span> python <span class="k">for</span> vscode
-
-- <span class="o">[</span> <span class="o">]</span> add .vscode/settings.json
-
-- <span class="o">[</span> <span class="o">]</span> poetry init
-
-- <span class="o">[</span> <span class="o">]</span> install black <span class="p">&amp;</span> flake8 <span class="k">for</span> development
-
-- <span class="o">[</span> <span class="o">]</span> install dj <span class="p">&amp;</span> drf
-
-- <span class="o">[</span> <span class="o">]</span> generate requirements.txt
-
-- <span class="o">[</span> <span class="o">]</span> django startproject
-
-- <span class="o">[</span> <span class="o">]</span> add .vscode/launch.json <span class="k">for</span> django
-
-- <span class="o">[</span> <span class="o">]</span> add .gitignore to project level folder
-
-- <span class="o">[</span> <span class="o">]</span> add PROJECT.code-workspace and .vscode/* to .gitignore
-
-- <span class="o">[</span> <span class="o">]</span> add LICENSE <span class="p">&amp;</span> CONTRIBUTING.md <span class="p">&amp;</span> README.md and so on so forth
-</code></pre></div>
-
-<p>یک نمونه پروژه ساخته شده را می‌توانید در مسیر <a href="https://github.com/reganto/mandos">https://github.com/reganto/mandos</a> بیابید.</p>
-<p>افزونه‌هایی مورد نیاز از این قرارند:</p>
-<ul>
-<li>
-<p>autoDocstring</p>
-</li>
-<li>
-<p>Pylance</p>
-</li>
-<li>
-<p>Python</p>
-</li>
-</ul>
-<p>سایر افزونه‌های جالب:</p>
-<ul>
-<li>
-<p>Docker</p>
-</li>
-<li>
-<p>Lorem Ipsum</p>
-</li>
-<li>
-<p>Material Icon Theme</p>
-</li>
-<li>
-<p>PostgreSQL</p>
-</li>
-</ul>
-				</div>
-			</div>
-	</div>
-<p class="paginator">
-        <a href="/index2.html">&laquo;</a>
-    صفحه 3 / 7
-        <a href="/index4.html">&raquo;</a>
-</p>
+    <div class="row-fluid">
+        <div class="span8 offset2">
+            <header>
+            <h1 id="recent-posts">Recent Posts <a id="allposts" href="/archives.html">all posts</a></h1>
+            </header>
+        <div class="recent-posts">
+            <div itemscope class="recent-posts-article">
+                <a href="/scalability.html">
+                    مقاس‌پذیری
+                </a>
+                <div class="recent-posts-posted">
+                    posted in
+                    <a href="/categories.html#software-architecture-ref">Software Architecture</a>
+                    <time itemprop="dateCreated" datetime="2022-09-14T10:20:00+04:30">Wed 14 September 2022</time>
+                </div>
+            </div>
+            <div itemscope class="recent-posts-article">
+                <a href="/solid-principles.html">
+                    اصول SOLID
+                </a>
+                <div class="recent-posts-posted">
+                    posted in
+                    <a href="/categories.html#clean-architecture-ref">Clean Architecture</a>
+                    <time itemprop="dateCreated" datetime="2022-06-21T10:20:00+04:30">Tue 21 June 2022</time>
+                </div>
+            </div>
+            <div itemscope class="recent-posts-article">
+                <a href="/vscode-for-djagno.html">
+                    آماده‌سازی VSCode برای Django
+                </a>
+                <div class="recent-posts-posted">
+                    posted in
+                    <a href="/categories.html#python-ref">Python</a>
+                    <time itemprop="dateCreated" datetime="2022-06-16T10:20:00+04:30">Thu 16 June 2022</time>
+                </div>
+            </div>
+            <div itemscope class="recent-posts-article">
+                <a href="/regression-testing-with-seige.html">
+                    تست رگرسیون با Siege
+                </a>
+                <div class="recent-posts-posted">
+                    posted in
+                    <a href="/categories.html#test-ref">Test</a>
+                    <time itemprop="dateCreated" datetime="2022-05-18T16:48:00+04:30">Wed 18 May 2022</time>
+                </div>
+            </div>
+            <div itemscope class="recent-posts-article">
+                <a href="/dibiasky-extinction.html">
+                    انقراض دبیاسکی
+                </a>
+                <div class="recent-posts-posted">
+                    posted in
+                    <a href="/categories.html#blog-ref">blog</a>
+                    <time itemprop="dateCreated" datetime="2022-03-16T16:33:00+03:30">Wed 16 March 2022</time>
+                </div>
+            </div>
+            <div itemscope class="recent-posts-article">
+                <a href="/one-of-my-job-interview-questions.html">
+                    یکی از سوالات مصاحبه من
+                </a>
+                <div class="recent-posts-posted">
+                    posted in
+                    <a href="/categories.html#blog-ref">blog</a>
+                    <time itemprop="dateCreated" datetime="2022-03-11T19:38:00+03:30">Fri 11 March 2022</time>
+                </div>
+            </div>
+            <div itemscope class="recent-posts-article">
+                <a href="/post-template.html">
+                    Post Template
+                </a>
+                <div class="recent-posts-posted">
+                    posted in
+                    <a href="/categories.html#python-ref">Python</a>
+                    <time itemprop="dateCreated" datetime="2010-12-03T10:20:00+03:30">Fri 03 December 2010</time>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
 </div>
-		</div>
-		<div class="push"></div>
-	</div>
-	<div class="footer">
-		<div class="container">
-			<hr/>
-				<ul class="nav nav-pills pull-right">
-				  <li><a href="/archives.html">بایگانی</a></li>
-				  <li><a href="/feeds/all.atom.xml">خبرخوان</a> </li>
-                  <li><a href="https://bayanbox.ir/view/4000388191129105754/software-design.pdf">کتابچه معماری نرم‌افزار</a></li>
-                  <li><a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> </li>
-				</ul>
-		</div>
-	</div>
-</body>
+                    </div>
+                    <div class="span1"></div>
+                </div>
+            </div>
+        </div>
+<footer>
+
+    <div>
+        <span class="site-name">رگانتو</span> - دست و دل نوشته‌های گیکی از وانیار
+    </div>
+
+
+
+    <div id="fpowered">
+        Powered by: <a href="http://getpelican.com/" title="Pelican Home Page" target="_blank" rel="nofollow noopener noreferrer">Pelican</a>
+        Theme: <a href="https://elegant.oncrashreboot.com/" title="Theme Elegant Home Page" target="_blank" rel="nofollow noopener noreferrer">Elegant</a>
+    </div>
+</footer>        <script src="//code.jquery.com/jquery.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+        <script src="/theme/js/elegant.prod.9e9d5ce754.js"></script>
+        <script>
+            function validateForm(query)
+            {
+                return (query.length > 0);
+            }
+        </script>
+    </body>
+    <!-- Theme: Elegant built for Pelican
+        License : MIT -->
 </html>
