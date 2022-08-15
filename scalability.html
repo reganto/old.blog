@@ -9,31 +9,39 @@
 
         <link rel="dns-prefetch" href="//fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap');
+            div.article-content, header.page-header h1{
+                direction: rtl;
+                font-family: 'Vazirmatn', sans-serif;
+            }
+        </style>
         <meta name="author" content="Reganto" />
 
+        <meta name="description" content="" />
+        <meta name="twitter:creator" content="@monaghizadeh">
         <meta property="og:type" content="article" />
         <meta name="twitter:card" content="summary">
 
 <meta name="keywords" content="scale out, scale up, scalability, Software Architecture, " />
 
-<meta property="og:title" content="مقاس‌پذیری "/>
+<meta property="og:title" content="مقیاس‌پذیری "/>
 <meta property="og:url" content="/scalability.html" />
-<meta property="og:description" content="همیشه به scalability و مفاهیم مرتبط با علاقه داشته‌ام و ویژه distributed systems و scale out در این مقاله فرصتی شد تا بیشتر راجع‌به این موضوعات یاد بگیرم. این نوشتار ترجمه‌ای است با اضافات از این مطلب. این نوشتار در کتابچه مقدمه‌ای بر معماری نرم‌افزار نیز قرار داده شده است" />
+<meta property="og:description" content="" />
 <meta property="og:site_name" content="رگانتو" />
 <meta property="og:article:author" content="Reganto" />
 <meta property="og:article:published_time" content="2022-09-14T10:20:00+04:30" />
-<meta name="twitter:title" content="مقاس‌پذیری ">
-<meta name="twitter:description" content="همیشه به scalability و مفاهیم مرتبط با علاقه داشته‌ام و ویژه distributed systems و scale out در این مقاله فرصتی شد تا بیشتر راجع‌به این موضوعات یاد بگیرم. این نوشتار ترجمه‌ای است با اضافات از این مطلب. این نوشتار در کتابچه مقدمه‌ای بر معماری نرم‌افزار نیز قرار داده شده است">
+<meta name="twitter:title" content="مقیاس‌پذیری ">
+<meta name="twitter:description" content="">
 
-        <title>مقاس‌پذیری  · رگانتو
+        <title>مقیاس‌پذیری  · رگانتو
 </title>
         <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="رگانتو - Full Atom Feed" />
 
 
 
     </head>
-    <body style="direction: rtl;">
+    <body>
         <div id="content">
             <div class="navbar navbar-static-top">
                 <div class="navbar-inner">
@@ -69,7 +77,7 @@
     <header class="page-header span10 offset2">
         <h1>
             <a href="/scalability.html">
-                مقاس‌پذیری
+                مقیاس‌پذیری
             </a>
         </h1>
     </header>
@@ -78,8 +86,7 @@
 <div class="row-fluid">
         <div class="span8 offset2 article-content">
             
-            <h1>مقدمه</h1>
-<p>همیشه به scalability و مفاهیم مرتبط با علاقه داشته‌ام و ویژه distributed systems و scale out در این مقاله فرصتی شد تا بیشتر راجع‌به این موضوعات یاد بگیرم. این نوشتار ترجمه‌ای است با اضافات از <a href="https://datacadamia.com/code/design/scalability">این مطلب</a>. این نوشتار در کتابچه <strong>مقدمه‌ای بر معماری نرم‌افزار</strong> نیز قرار داده شده است</p>
+            <p>همیشه به Scalability و مفاهیم مرتبط با آن به ویژه Distributed Systems و Scale Out علاقه‌ داشته‌ام. فرصتی پیش آمد تا راجع به این مفاهیم بیشتر مطالعه کنم. این نوشتار ترجمه‌ای است  از <a href="https://datacadamia.com/code/design/scalability">این مطلب</a> همراه با اضافات. برای اطلاعات بیشتر <a href="https://bayanbox.ir/view/4000388191129105754/software-design.pdf">کتابچه معماری نرم‌افزار</a> را مطالعه کنید.</p>
 <h1>مقیاس‌پذیری</h1>
 <h2>درباره</h2>
 <p>افزایش یا کاهش ظرفیت یک سیستم با استفاده موثر از منابع به عنوان مقیاس‌پذیری شناخته می شود. یک سیستم مقیاس‌پذیر می‌تواند تعداد فزاینده‌ای از درخواست‌ها را بدون تاثیر نامطلوب بر زمان پاسخ‌دهی مدیریت کند.
@@ -225,6 +232,12 @@
             </ul>
 <h4>Contact</h4>
 <div id="sidebar-social-link">
+    <a href="https://github.com/reganto/" title="Reganto Github" target="_blank" rel="nofollow noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" aria-label="GitHub" role="img" viewBox="0 0 512 512"><rect width="512" height="512" rx="15%" fill="#1B1817"/><path fill="#fff" d="M335 499c14 0 12 17 12 17H165s-2-17 12-17c13 0 16-6 16-12l-1-50c-71 16-86-28-86-28-12-30-28-37-28-37-24-16 1-16 1-16 26 2 40 26 40 26 22 39 59 28 74 22 2-17 9-28 16-35-57-6-116-28-116-126 0-28 10-51 26-69-3-6-11-32 3-67 0 0 21-7 70 26 42-12 86-12 128 0 49-33 70-26 70-26 14 35 6 61 3 67 16 18 26 41 26 69 0 98-60 120-117 126 10 8 18 24 18 48l-1 70c0 6 3 12 16 12z"/></svg>
+    </a>
+    <a href="https://reganto.github.io/feeds/all.atom.xml" title="" target="_blank" rel="nofollow noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" aria-label="RSS" role="img" viewBox="0 0 512 512"><rect width="512" height="512" rx="15%" fill="#f80"/><circle cx="145" cy="367" r="35" fill="#fff"/><path fill="none" stroke="#fff" stroke-width="60" d="M109 241c89 0 162 73 162 162M109 127c152 0 276 124 276 276"/></svg>
+    </a>
 </div>
             
 
@@ -312,6 +325,9 @@
             </div>
         </div>
 <footer>
+    <div>
+        CC BY-SA 4.0
+    </div>
 
     <div>
         <span class="site-name">رگانتو</span> - دست و دل نوشته‌های گیکی از وانیار
