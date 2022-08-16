@@ -98,7 +98,7 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;سپس حداکثر سرعتی که می توان به دست آورد طبق قانون امدال(Amdahl's Law) داده می شود:&lt;/p&gt;
-&lt;p&gt;1/a+(1-a)/P&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;1/(a+(1-a)/P)&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;با جایگزینی مقادیر با α = 0.3، درمی‌یابیم که:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
