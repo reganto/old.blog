@@ -403,8 +403,8 @@
 &lt;li&gt;
 &lt;p&gt;PostgreSQL&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</content><category term="Python"></category><category term="vscode"></category><category term="django"></category></entry><entry><title>تست رگرسیون با Siege</title><link href="/regression-testing-with-seige.html" rel="alternate"></link><published>2022-05-18T16:48:00+04:30</published><updated>2022-05-18T16:48:00+04:30</updated><author><name>Reganto</name></author><id>tag:None,2022-05-18:/regression-testing-with-seige.html</id><summary type="html"></summary><content type="html">&lt;p&gt;وقتی یک برنامه تحت وب شروع به کار می‌کند شاید در نگاه اول همه چیز خوب به نظر برسد اما با رشد کاربران و افزایش ترافیک، سیستم چگونه کار خواهد کرد؟اگر برنامه تحت وب را یک جعبه در نظر بگیریم،‌درخواست به برنامه ارسال می‌شود،‌درخواست پردازش می‌شود ودر نهایت پاسخی نمایش داده می شود.با ابزار siege می‌توانیم regression test , load test, stress test را به خوبی انجام دهیم.&lt;/p&gt;
-&lt;p&gt;فرض کنید می‌خواهید برنامه ی تحت وب خود را برای یک میلیون کاربر آماده کنید.برای تست این برنامه دو راه وجود دارد، راه اول این است که از یک میلیون کاربر بخواهید که برنامه ی شما را تست کنند و راه دوم شبیه سازی این تعداد کاربر است.&lt;/p&gt;
+&lt;/ul&gt;</content><category term="Python"></category><category term="vscode"></category><category term="django"></category></entry><entry><title>تست رگرسیون با Siege</title><link href="/regression-testing-with-seige.html" rel="alternate"></link><published>2022-05-18T16:48:00+04:30</published><updated>2022-05-18T16:48:00+04:30</updated><author><name>Reganto</name></author><id>tag:None,2022-05-18:/regression-testing-with-seige.html</id><summary type="html"></summary><content type="html">&lt;p&gt;وقتی یک برنامه تحت وب شروع به کار می‌کند شاید در نگاه اول همه چیز خوب به نظر برسد اما با رشد کاربران و افزایش ترافیک، سیستم چگونه کار خواهد کرد؟اگر برنامه تحت وب را یک جعبه در نظر بگیریم،‌درخواست به برنامه ارسال می‌شود،‌درخواست پردازش می‌شود ودر نهایت پاسخی نمایش داده می شود.با ابزار siege می‌توانیم regression test , load test, stress test را به خوبی انجام دهیم.
+فرض کنید می‌خواهید برنامه ی تحت وب خود را برای یک میلیون کاربر آماده کنید.برای تست این برنامه دو راه وجود دارد، راه اول این است که از یک میلیون کاربر بخواهید که برنامه ی شما را تست کنند و راه دوم شبیه سازی این تعداد کاربر است.&lt;/p&gt;
 &lt;h3&gt;انواع تست کارایی&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;Load test:&lt;/strong&gt;
 وقتی که برنامه تحت وب را برای تعداد مشخص و از قبل تعیین شده‌ای از درخواست ها تست می‌کنیم،‌به این نوع تست load test می گویند.&lt;/p&gt;
@@ -857,29 +857,7 @@ Content-Length: &lt;span class="m"&gt;418&lt;/span&gt;
 &lt;h2&gt;ایجاد دوقطبی:&lt;/h2&gt;
 &lt;p&gt;صاحبان قدرت برای پیشبرد مقاصد خود دو قطبی ایجاد می‌کنند. مردم نیز به دو گروه تقسیم می‌شوند. گروهی موافق نابودی دنباله‌دار هستند و شعارشان این است:‌ « به بالا نگاه کن!» و گروهی دیگر نظر متفاوتی دارند و شعارشان «به بالا نگاه نکن!» است.&lt;/p&gt;
 &lt;p&gt;این هزارتو چنان دبیاسکی و دکتر مندی را خسته می‌کند که آن‌ها نومیدانه دست از تلاش می‌کشند و روزهای باقی مانده از عمر خود را آن‌طور که دوست دارند زندگی می‌کنند. این‌جاست که بیننده از خود می‌پرسد به راستی اگر دبیاسکی و دکتر مندی به جای ۶ ماه ۶۰ سال تلاش می‌کردند قادر به راضی کردن صاحبان قدرت و مردم برای مقابله جدی با خطر می‌شدند؟ &lt;/p&gt;
-&lt;p&gt;در این رابطه تماشای فیلم‌های دیگری مانند فینچ«Finch» و مسیر«The Road» توصیه می‌شود.&lt;/p&gt;</content><category term="blog"></category></entry><entry><title>یکی از سوالات مصاحبه من</title><link href="/one-of-my-job-interview-questions.html" rel="alternate"></link><published>2022-03-11T19:38:00+03:30</published><updated>2022-03-11T19:38:00+03:30</updated><author><name>Reganto</name></author><id>tag:None,2022-03-11:/one-of-my-job-interview-questions.html</id><summary type="html"></summary><content type="html">&lt;p&gt;با توجه به داده‌های موجود در شکل زیر کوئری بنویسید که میزان تخفیف مشتریان سوئدی را ۵٪ افزایش دهد
-Authors: Reganto
-Tags: interview, interview question
-Status: draft&lt;/p&gt;
-&lt;p&gt;عنوان سوال:&lt;/p&gt;
-&lt;p&gt;با توجه به داده‌های موجود در شکل زیر کوئری بنویسید که میزان تخفیف مشتریان سوئدی را ۵٪ افزایش دهد:
-&lt;img alt="سه جدول پایگاه داده" src="/images/1400/12/f.jpg"&gt;&lt;/p&gt;
-&lt;p&gt;راه‌حل من برای این سوال به این صورت بود که :&lt;/p&gt;
-&lt;div dir="ltr"&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;update&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;order_details_tbl&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;set&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;discount&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;discount&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="mf"&gt;0.005&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="k"&gt;from&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="k"&gt;select&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;orderid&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;from&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;orders_tbl&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;
-&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="k"&gt;join&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;customers_tbl&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;using&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;custid&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;
-&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="k"&gt;where&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;customers_tbl&lt;/span&gt;&lt;span class="mf"&gt;.&lt;/span&gt;&lt;span class="n"&gt;country&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Sweden&amp;#39;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="k"&gt;where&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="mf"&gt;.&lt;/span&gt;&lt;span class="n"&gt;orderid&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;order_details_tbl&lt;/span&gt;&lt;span class="mf"&gt;.&lt;/span&gt;&lt;span class="n"&gt;orderid&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;/div&gt;
-
-&lt;p&gt;این جواب بر روی پستگرس به خوبی کار می‌کند.&lt;/p&gt;</content><category term="blog"></category></entry><entry><title>اسکریپتی دوست‌دار باتری برای لینوکس</title><link href="/battery-full-alarm-for-linux.html" rel="alternate"></link><published>2021-08-19T10:20:00+04:30</published><updated>2021-08-19T10:20:00+04:30</updated><author><name>Reganto</name></author><id>tag:None,2021-08-19:/battery-full-alarm-for-linux.html</id><summary type="html"></summary><content type="html">&lt;p&gt;یکی از کاربران AskUbuntu سوالی پرسیده بود در رابطه با اسکریپتی برای نشان دادن آلارمی برای باتری لپ‌تاپ وقتی که تا حد معینی شارژ شده باشد. این موضوع برای من هم سوال بود و دوست داشتم اسکریپی برای آن بنویسم.&lt;/p&gt;
+&lt;p&gt;در این رابطه تماشای فیلم‌های دیگری مانند فینچ«Finch» و مسیر«The Road» توصیه می‌شود.&lt;/p&gt;</content><category term="blog"></category></entry><entry><title>اسکریپتی دوست‌دار باتری برای لینوکس</title><link href="/battery-full-alarm-for-linux.html" rel="alternate"></link><published>2021-08-19T10:20:00+04:30</published><updated>2021-08-19T10:20:00+04:30</updated><author><name>Reganto</name></author><id>tag:None,2021-08-19:/battery-full-alarm-for-linux.html</id><summary type="html"></summary><content type="html">&lt;p&gt;یکی از کاربران AskUbuntu سوالی پرسیده بود در رابطه با اسکریپتی برای نشان دادن آلارمی برای باتری لپ‌تاپ وقتی که تا حد معینی شارژ شده باشد. این موضوع برای من هم سوال بود و دوست داشتم اسکریپی برای آن بنویسم.&lt;/p&gt;
 &lt;h2&gt;سوال چه بود؟&lt;/h2&gt;
 &lt;p&gt;سوال را می‌توانید &lt;a href="https://askubuntu.com/q/1157608/1397026"&gt;اینجا&lt;/a&gt; بیابید.&lt;/p&gt;
 &lt;h2&gt;پاسخ من به این سوال&lt;/h2&gt;
