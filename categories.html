@@ -1,342 +1,58 @@
 <!DOCTYPE html>
 <html lang="fa">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="/theme/css/elegant.prod.9e9d5ce754.css" media="screen">
-        <link rel="stylesheet" type="text/css" href="/theme/css/custom.css" media="screen">
-        <link rel="dns-prefetch" href="//fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap');
-            div.article-content p, div.article-content h1, div.article-content h2, div.article-content h3, div.article-content ul li, div.article-content ol li, header.page-header h1, div.recent-posts-article{
-                direction: rtl;
-                font-family: 'Vazirmatn', sans-serif;
-            }
-            div.recent-posts-posted {
-                direction: ltr;
-            }
-            header.page-header h1{
-                direction: rtl;
-                font-family: 'Vazirmatn', sans-serif;
-            }
-        </style>
-        <meta name="author" content="Reganto" />
+<head>
+	<title>رگانتو</title>
 
-        <meta name="description" content="All categories of the رگانتو blog.
-" />
-        <meta name="twitter:creator" content="@monaghizadeh">
-        <meta property="og:type" content="article" />
-        <meta name="twitter:card" content="summary">
+	<link rel="stylesheet" href="/theme/css/bootstrap.css" type="text/css" />
+	<link rel="stylesheet" href="/theme/css/bootstrap-rtl.css" type="text/css" />
+	<link rel="stylesheet" href="/theme/css/pygments.css" type="text/css" />
+	<link rel="stylesheet" href="/theme/css/main.css" type="text/css" />
+	<link rel="stylesheet" href="/theme/css/Vazir.css" type="text/css" />
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+	<script>
+  		$(document).ready(function () {
+    		$(".post table").addClass("table table-striped table-condensed table-bordered");
+  	  	});
+    </script>
+	<meta charset="utf-8" />
 
-<meta property="og:title" content="All Categories · رگانتو"/>
-<meta name="twitter:title" content="All Categories · رگانتو">
-<meta property="og:url" content="/categories.html" />
-<meta property="og:description" content="All categories of the رگانتو blog" />
-<meta name="twitter:description" content="All categories of the رگانتو blog">
-<meta property="og:site_name" content="رگانتو" />
-<meta property="og:article:author" content="Reganto" />
-        <title>All Categories · رگانتو
-</title>
-        <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="رگانتو - Full Atom Feed" />
+	<link rel="alternate" href="/feeds/all.atom.xml" type="application/atom+xml" title="خبرخوان رگانتو -یادداشت‌های مرتضی نقی‌ زاده " />
+    <meta name="description" content="یادداشت‌های مرتضی نقی‌ زاده">
+	<meta name="keywords" content="python, django, tornado, software, software architecture, clean architecture, software design, reganto, morteza naghizadeh">
 
-        <link href="/feeds/blog.atom.xml" type="application/atom+xml" rel="alternate" title="رگانتو - blog Category Atom Feed" />
-        <link href="/feeds/clean-architecture.atom.xml" type="application/atom+xml" rel="alternate" title="رگانتو - Clean Architecture Category Atom Feed" />
-        <link href="/feeds/concurrency.atom.xml" type="application/atom+xml" rel="alternate" title="رگانتو - Concurrency Category Atom Feed" />
-        <link href="/feeds/linux.atom.xml" type="application/atom+xml" rel="alternate" title="رگانتو - Linux Category Atom Feed" />
-        <link href="/feeds/python.atom.xml" type="application/atom+xml" rel="alternate" title="رگانتو - Python Category Atom Feed" />
-        <link href="/feeds/software-architecture.atom.xml" type="application/atom+xml" rel="alternate" title="رگانتو - Software Architecture Category Atom Feed" />
-        <link href="/feeds/template.atom.xml" type="application/atom+xml" rel="alternate" title="رگانتو - Template Category Atom Feed" />
-        <link href="/feeds/test.atom.xml" type="application/atom+xml" rel="alternate" title="رگانتو - Test Category Atom Feed" />
-        <link href="/feeds/tornado.atom.xml" type="application/atom+xml" rel="alternate" title="رگانتو - Tornado Category Atom Feed" />
-
-
-
-    </head>
-    <body>
-        <div id="content">
-            <div class="navbar navbar-static-top">
-                <div class="navbar-inner">
-                    <div class="container-fluid">
-                        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </a>
-                        <a class="brand" href="/"><span class=site-name>رگانتو</span></a>
-                        <div class="nav-collapse collapse">
-                            <ul class="nav pull-right top-menu">
-                                <li >
-                                    <a href=
-                                       "/"
-                                    >خانه</a>
-                                </li>
-                                <li  class="active"><a href="/categories.html">دسته‌بندی‌ها</a></li>
-                                <li ><a href="/tags.html">تگ‌ها</a></li>
-                                <li ><a href="/archives.html">آرشیو</a></li>
-                                <!-- <li><form class="navbar-search" action="/search.html" onsubmit="return validateForm(this.elements['q'].value);"> <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input"></form></li> -->
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container-fluid">
-                <div class="row-fluid">
-                    <div class="span1"></div>
-                    <div class="span10">
-<div class="row-fluid">
-    <header class="page-header span10 offset2">
-    <h1><a href="/categories.html">All Categories</a></h1>
-    </header>
-</div>
-
-
-<div class="row-fluid">
-    <div class="span8 offset2">
-        <div class="accordion" id="accordion2">
-            <div class="accordion-group">
-                <div class="accordion-heading">
-                    <a class="accordion-toggle category-title-inside-accordion collapsed" data-toggle="collapse" data-parent="#accordion2" href="#blog-ref">
-                        blog<span class="superscript">1</span>
-                    </a>
-                </div>
-                <div id="blog-ref" class="accordion-body collapse">
-                    <div class="accordion-inner">
-                        <ul class="list-articles-under-tag-category">
-                            <li itemscope>
-                                    <a href="/dibiasky-extinction.html">
-                                        انقراض دبیاسکی
-                                    </a>
-                                <time itemprop="dateCreated" datetime="2022-03-16T16:33:00+03:30">
-                                    Wed 16 March 2022
-                                </time>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-group">
-                <div class="accordion-heading">
-                    <a class="accordion-toggle category-title-inside-accordion collapsed" data-toggle="collapse" data-parent="#accordion2" href="#clean-architecture-ref">
-                        Clean Architecture<span class="superscript">1</span>
-                    </a>
-                </div>
-                <div id="clean-architecture-ref" class="accordion-body collapse">
-                    <div class="accordion-inner">
-                        <ul class="list-articles-under-tag-category">
-                            <li itemscope>
-                                    <a href="/solid-principles.html">
-                                        اصول SOLID
-                                    </a>
-                                <time itemprop="dateCreated" datetime="2022-06-21T10:20:00+04:30">
-                                    Tue 21 June 2022
-                                </time>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-group">
-                <div class="accordion-heading">
-                    <a class="accordion-toggle category-title-inside-accordion collapsed" data-toggle="collapse" data-parent="#accordion2" href="#concurrency-ref">
-                        Concurrency<span class="superscript">1</span>
-                    </a>
-                </div>
-                <div id="concurrency-ref" class="accordion-body collapse">
-                    <div class="accordion-inner">
-                        <ul class="list-articles-under-tag-category">
-                            <li itemscope>
-                                    <a href="/introduction-to-concurrency.html">
-                                        درامدی بر concurrency
-                                    </a>
-                                <time itemprop="dateCreated" datetime="2022-08-29T10:20:00+04:30">
-                                    Mon 29 August 2022
-                                </time>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-group">
-                <div class="accordion-heading">
-                    <a class="accordion-toggle category-title-inside-accordion collapsed" data-toggle="collapse" data-parent="#accordion2" href="#linux-ref">
-                        Linux<span class="superscript">1</span>
-                    </a>
-                </div>
-                <div id="linux-ref" class="accordion-body collapse">
-                    <div class="accordion-inner">
-                        <ul class="list-articles-under-tag-category">
-                            <li itemscope>
-                                    <a href="/battery-full-alarm-for-linux.html">
-                                        اسکریپت full battery alarm برای لینوکس
-                                    </a>
-                                <time itemprop="dateCreated" datetime="2021-08-19T10:20:00+04:30">
-                                    Thu 19 August 2021
-                                </time>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-group">
-                <div class="accordion-heading">
-                    <a class="accordion-toggle category-title-inside-accordion collapsed" data-toggle="collapse" data-parent="#accordion2" href="#python-ref">
-                        Python<span class="superscript">2</span>
-                    </a>
-                </div>
-                <div id="python-ref" class="accordion-body collapse">
-                    <div class="accordion-inner">
-                        <ul class="list-articles-under-tag-category">
-                            <li itemscope>
-                                    <a href="/docker-vs-venv.html">
-                                        با وجود venv بازم لازمه داکر یادبگیرم؟
-                                    </a>
-                                <time itemprop="dateCreated" datetime="2022-08-12T10:20:00+04:30">
-                                    Fri 12 August 2022
-                                </time>
-                            </li>
-                            <li itemscope>
-                                    <a href="/vscode-for-djagno.html">
-                                        آماده‌سازی VSCode برای Django
-                                    </a>
-                                <time itemprop="dateCreated" datetime="2022-06-16T10:20:00+04:30">
-                                    Thu 16 June 2022
-                                </time>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-group">
-                <div class="accordion-heading">
-                    <a class="accordion-toggle category-title-inside-accordion collapsed" data-toggle="collapse" data-parent="#accordion2" href="#software-architecture-ref">
-                        Software Architecture<span class="superscript">1</span>
-                    </a>
-                </div>
-                <div id="software-architecture-ref" class="accordion-body collapse">
-                    <div class="accordion-inner">
-                        <ul class="list-articles-under-tag-category">
-                            <li itemscope>
-                                    <a href="/scalability.html">
-                                        مقیاس‌پذیری
-                                    </a>
-                                <time itemprop="dateCreated" datetime="2022-08-14T10:20:00+04:30">
-                                    Sun 14 August 2022
-                                </time>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-group">
-                <div class="accordion-heading">
-                    <a class="accordion-toggle category-title-inside-accordion collapsed" data-toggle="collapse" data-parent="#accordion2" href="#template-ref">
-                        Template<span class="superscript">1</span>
-                    </a>
-                </div>
-                <div id="template-ref" class="accordion-body collapse">
-                    <div class="accordion-inner">
-                        <ul class="list-articles-under-tag-category">
-                            <li itemscope>
-                                    <a href="/post-template.html">
-                                        Post Template
-                                    </a>
-                                <time itemprop="dateCreated" datetime="2010-12-03T10:20:00+03:30">
-                                    Fri 03 December 2010
-                                </time>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-group">
-                <div class="accordion-heading">
-                    <a class="accordion-toggle category-title-inside-accordion collapsed" data-toggle="collapse" data-parent="#accordion2" href="#test-ref">
-                        Test<span class="superscript">1</span>
-                    </a>
-                </div>
-                <div id="test-ref" class="accordion-body collapse">
-                    <div class="accordion-inner">
-                        <ul class="list-articles-under-tag-category">
-                            <li itemscope>
-                                    <a href="/regression-testing-with-seige.html">
-                                        تست رگرسیون با Siege
-                                    </a>
-                                <time itemprop="dateCreated" datetime="2022-05-18T16:48:00+04:30">
-                                    Wed 18 May 2022
-                                </time>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-group">
-                <div class="accordion-heading">
-                    <a class="accordion-toggle category-title-inside-accordion collapsed" data-toggle="collapse" data-parent="#accordion2" href="#tornado-ref">
-                        Tornado<span class="superscript">1</span>
-                    </a>
-                </div>
-                <div id="tornado-ref" class="accordion-body collapse">
-                    <div class="accordion-inner">
-                        <ul class="list-articles-under-tag-category">
-                            <li itemscope>
-                                    <a href="/tornado-periodic-callback.html">
-                                        تورنادو و تسک‌های periodic
-                                    </a>
-                                <time itemprop="dateCreated" datetime="2022-08-31T10:20:00+04:30">
-                                    Wed 31 August 2022
-                                </time>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-                    </div>
-                    <div class="span1"></div>
-                </div>
-            </div>
-        </div>
-<footer>
-    <div>
-        CC BY-SA 4.0
-    </div>
-
-    <div>
-        <span class="site-name">رگانتو</span> - دست و دل نوشته‌های گیکی از وانیار
-    </div>
-
-
-
-    <div id="fpowered">
-        Powered by: <a href="http://getpelican.com/" title="Pelican Home Page" target="_blank" rel="nofollow noopener noreferrer">Pelican</a>
-        Theme: <a href="https://elegant.oncrashreboot.com/" title="Theme Elegant Home Page" target="_blank" rel="nofollow noopener noreferrer">Elegant</a>
-    </div>
-</footer>        <script src="//code.jquery.com/jquery.min.js"></script>
-        <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
-        <script src="/theme/js/elegant.prod.9e9d5ce754.js"></script>
-        <script>
-            function validateForm(query)
-            {
-                return (query.length > 0);
-            }
-        </script>
-
-<script>
-    function uncollapse() {
-            $(window.location.hash).collapse({
-                toggle: true
-            })
-    }
-</script>
-
-<script>
-    uncollapse();
-</script>
-    </body>
-    <!-- Theme: Elegant built for Pelican
-        License : MIT -->
+</head>
+<body>
+	<div class="wrap">
+		<div class="container">
+			<div class="banner">
+				<a href="">رگانتو</a>
+				<h1>یادداشت‌های مرتضی نقی‌ زاده</h1>
+			</div>
+<ul>
+    <li><a href="/category/blog.html">blog</a></li>
+    <li><a href="/category/clean-architecture.html">Clean Architecture</a></li>
+    <li><a href="/category/concurrency.html">Concurrency</a></li>
+    <li><a href="/category/linux.html">Linux</a></li>
+    <li><a href="/category/python.html">Python</a></li>
+    <li><a href="/category/software-architecture.html">Software Architecture</a></li>
+    <li><a href="/category/template.html">Template</a></li>
+    <li><a href="/category/test.html">Test</a></li>
+    <li><a href="/category/tornado.html">Tornado</a></li>
+</ul>
+		</div>
+		<div class="push"></div>
+	</div>
+	<div class="footer">
+		<div class="container">
+			<hr/>
+				<ul class="nav nav-pills pull-right">
+					<li><a href="https://github.com/reganto/">گیت‌هاب</a> </li>
+					<li><a href="https://linkedin.com/in/mortezanaghizadeh/">لینکدین</a> </li>
+					<li><a href="mailto:tell.reganto@gamil.com">تماس با من</a> </li>
+				    <li><a href="/feeds/all.atom.xml">خبرخوان</a> </li>
+				    <li><a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 - 2022</a> </li>
+				</ul>
+		</div>
+	</div>
+</body>
 </html>

@@ -1,137 +1,61 @@
 <!DOCTYPE html>
 <html lang="fa">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="/theme/css/elegant.prod.9e9d5ce754.css" media="screen">
-        <link rel="stylesheet" type="text/css" href="/theme/css/custom.css" media="screen">
-        <link rel="dns-prefetch" href="//fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap');
-            div.article-content p, div.article-content h1, div.article-content h2, div.article-content h3, div.article-content ul li, div.article-content ol li, header.page-header h1, div.recent-posts-article{
-                direction: rtl;
-                font-family: 'Vazirmatn', sans-serif;
-            }
-            div.recent-posts-posted {
-                direction: ltr;
-            }
-            header.page-header h1{
-                direction: rtl;
-                font-family: 'Vazirmatn', sans-serif;
-            }
-        </style>
-        <meta name="author" content="Reganto" />
+<head>
+	<title>رگانتو - نوشته‌های مربوط به SOLID</title>
 
-        <meta name="description" content="Software Architecture, Clean Architecture, Software Design, Python" />
-        <meta name="twitter:creator" content="@monaghizadeh">
-        <meta property="og:type" content="article" />
-        <meta name="twitter:card" content="summary">
+	<link rel="stylesheet" href="/theme/css/bootstrap.css" type="text/css" />
+	<link rel="stylesheet" href="/theme/css/bootstrap-rtl.css" type="text/css" />
+	<link rel="stylesheet" href="/theme/css/pygments.css" type="text/css" />
+	<link rel="stylesheet" href="/theme/css/main.css" type="text/css" />
+	<link rel="stylesheet" href="/theme/css/Vazir.css" type="text/css" />
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+	<script>
+  		$(document).ready(function () {
+    		$(".post table").addClass("table table-striped table-condensed table-bordered");
+  	  	});
+    </script>
+	<meta charset="utf-8" />
 
-<meta property="og:title" content="رگانتو"/>
-<meta name="twitter:title" content="رگانتو">
-<meta property="og:url" content="" />
-<meta property="og:site_name" content="رگانتو" />
-<meta property="og:article:author" content="Reganto" />
-<meta property="og:description" content="Software Architecture, Clean Architecture, Software Design, Python" />
-<meta name="twitter:description" content="Software Architecture, Clean Architecture, Software Design, Python">
-<meta name="keywords" content=" asynchronous,  battery,  concurrency,  django,  docker,  isolation,  linux,  parallelism,  pelican,  publishing,  python,  regression testing,  scalability,  scale out,  scale up,  siege,  SOLID,  test,  tornado,  vevnv,  vscode,  blog,  Clean Architecture,  Concurrency,  Linux,  Python,  Software Architecture,  Template,  Test,  Tornado, " />
-        <title>رگانتو - SOLID tag</title>
-        <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="رگانتو - Full Atom Feed" />
+	<link rel="alternate" href="/feeds/all.atom.xml" type="application/atom+xml" title="خبرخوان رگانتو -یادداشت‌های مرتضی نقی‌ زاده " />
+    <meta name="description" content="یادداشت‌های مرتضی نقی‌ زاده">
+	<meta name="keywords" content="python, django, tornado, software, software architecture, clean architecture, software design, reganto, morteza naghizadeh">
 
-
-
-    </head>
-    <body>
-        <div id="content">
-            <div class="navbar navbar-static-top">
-                <div class="navbar-inner">
-                    <div class="container-fluid">
-                        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </a>
-                        <a class="brand" href="/"><span class=site-name>رگانتو</span></a>
-                        <div class="nav-collapse collapse">
-                            <ul class="nav pull-right top-menu">
-                                <li >
-                                    <a href=
-                                       "/"
-                                    >خانه</a>
-                                </li>
-                                <li ><a href="/categories.html">دسته‌بندی‌ها</a></li>
-                                <li ><a href="/tags.html">تگ‌ها</a></li>
-                                <li ><a href="/archives.html">آرشیو</a></li>
-                                <!-- <li><form class="navbar-search" action="/search.html" onsubmit="return validateForm(this.elements['q'].value);"> <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input"></form></li> -->
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container-fluid">
-                <div class="row-fluid">
-                    <div class="span1"></div>
-                    <div class="span10">
-
-
-<div class="row-fluid">
-
-    <div class="row-fluid">
-
-    </div>
-
-    <div class="row-fluid">
-        <div class="span8 offset2">
-            <header>
-            <h1 id="recent-posts">Recent Posts <a id="allposts" href="/archives.html">all posts</a></h1>
-            </header>
-        <div class="recent-posts">
-            <div itemscope class="recent-posts-article">
-                <a href="/solid-principles.html">
-                    اصول SOLID
-                </a>
-                <div class="recent-posts-posted">
-                    posted in
-                    <a href="/categories.html#clean-architecture-ref">Clean Architecture</a>
-                    <time itemprop="dateCreated" datetime="2022-06-21T10:20:00+04:30">Tue 21 June 2022</time>
-                </div>
-            </div>
-        </div>
-        </div>
-    </div>
+</head>
+<body>
+	<div class="wrap">
+		<div class="container">
+			<div class="banner">
+				<a href="">رگانتو</a>
+				<h1>یادداشت‌های مرتضی نقی‌ زاده</h1>
+			</div>
+<h2>نوشته‌های مربوط به SOLID</h2>
+<div class="content">
+	<div class="post-list">
+		<div class="post">
+			<h4>
+				<a href="/solid-principles.html" title="اصول SOLID">اصول SOLID</a>
+			</h4>
+			<p></p>
+		</div>
+	</div>
+<p class="paginator">
+    صفحه 1 / 1
+</p>
 </div>
-                    </div>
-                    <div class="span1"></div>
-                </div>
-            </div>
-        </div>
-<footer>
-    <div>
-        CC BY-SA 4.0
-    </div>
-
-    <div>
-        <span class="site-name">رگانتو</span> - دست و دل نوشته‌های گیکی از وانیار
-    </div>
-
-
-
-    <div id="fpowered">
-        Powered by: <a href="http://getpelican.com/" title="Pelican Home Page" target="_blank" rel="nofollow noopener noreferrer">Pelican</a>
-        Theme: <a href="https://elegant.oncrashreboot.com/" title="Theme Elegant Home Page" target="_blank" rel="nofollow noopener noreferrer">Elegant</a>
-    </div>
-</footer>        <script src="//code.jquery.com/jquery.min.js"></script>
-        <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
-        <script src="/theme/js/elegant.prod.9e9d5ce754.js"></script>
-        <script>
-            function validateForm(query)
-            {
-                return (query.length > 0);
-            }
-        </script>
-    </body>
-    <!-- Theme: Elegant built for Pelican
-        License : MIT -->
+		</div>
+		<div class="push"></div>
+	</div>
+	<div class="footer">
+		<div class="container">
+			<hr/>
+				<ul class="nav nav-pills pull-right">
+					<li><a href="https://github.com/reganto/">گیت‌هاب</a> </li>
+					<li><a href="https://linkedin.com/in/mortezanaghizadeh/">لینکدین</a> </li>
+					<li><a href="mailto:tell.reganto@gamil.com">تماس با من</a> </li>
+				    <li><a href="/feeds/all.atom.xml">خبرخوان</a> </li>
+				    <li><a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 - 2022</a> </li>
+				</ul>
+		</div>
+	</div>
+</body>
 </html>
